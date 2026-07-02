@@ -1,9 +1,33 @@
+import { Navbar } from '@/components/layout/Navbar';
+import { Hero } from '@/components/sections/Hero';
+import { TrustedBy } from '@/components/sections/TrustedBy';
+import { Features } from '@/components/sections/Features';
+import { ProductShowcase } from '@/components/sections/ProductShowcase';
+import { Benefits } from '@/components/sections/Benefits';
+import { Statistics } from '@/components/sections/Statistics';
+import { Testimonials } from '@/components/sections/Testimonials';
+import { Pricing } from '@/components/sections/Pricing';
+import { Faq } from '@/components/sections/Faq';
+import { FinalCta } from '@/components/sections/FinalCta';
+import { Footer } from '@/components/sections/Footer';
+
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <h1 className="text-4xl font-bold">Nova Landing Page</h1>
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <TrustedBy />
+        <Features />
+        <ProductShowcase />
+        <Benefits />
+        <Statistics />
+        <Testimonials />
+        <Pricing />
+        <Faq />
+        <FinalCta />
       </main>
-    </div>
+      <Footer />
+    </>
   );
 }
