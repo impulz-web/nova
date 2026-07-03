@@ -15,7 +15,7 @@ export const Hero: React.FC = () => {
                 AI that helps your business work smarter.
               </h1>
               <p className="text-xl text-gray-600 max-w-lg">
-                NovaAI automates repetitive tasks, generates insights, and supercharges your team's productivity with cutting-edge artificial intelligence.
+                NovaAI automates repetitive tasks, generates insights, and supercharges team productivity with cutting-edge artificial intelligence.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
