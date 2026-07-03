@@ -15,6 +15,7 @@ const AnimatedCounter: React.FC<{ number: number; suffix: string }> = ({ number,
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const currentRef = ref.current;
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -38,10 +39,10 @@ const AnimatedCounter: React.FC<{ number: number; suffix: string }> = ({ number,
       { threshold: 0.5 }
     );
 
-    if (ref.current) observer.observe(ref.current);
+    if (currentRef) observer.observe(currentRef);
 
     return () => {
-      if (ref.current) observer.unobserve(ref.current);
+      if (currentRef) observer.unobserve(currentRef);
     };
   }, [number]);
 

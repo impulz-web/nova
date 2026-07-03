@@ -73,7 +73,7 @@ export const Faq: React.FC = () => {
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Frequently asked questions</h2>
-            <p className="text-lg text-gray-600">Got questions? We've got answers.</p>
+            <p className="text-lg text-gray-600">Got questions? We have got answers.</p>
           </div>
           <div className="bg-white rounded-2xl border border-gray-100 p-6">
             {faqs.map((faq, idx) => (

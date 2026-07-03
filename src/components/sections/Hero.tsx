@@ -76,7 +76,7 @@ export const Hero: React.FC = () => {
                     Can you help me prepare the weekly report?
                   </div>
                   <div className="bg-blue-50 rounded-lg p-3 text-sm text-blue-900">
-                    Of course! I'll analyze last week's data and generate a summary in 30 seconds.
+                    Of course! I will analyze last week data and generate a summary in 30 seconds.
                   </div>
                 </div>
               </div>
